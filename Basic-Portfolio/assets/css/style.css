@@ -1,0 +1,176 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/*font: inherit;*/
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+
+/* CSS Reset above this line */
+
+* {
+    /* Auto adjusts sizing with padding and margins */
+    box-sizing: border-box;
+}
+/* h1 inside of nav bar with teal padding, text centered, fixed position */
+h1 {
+   float: left;
+   width: 230px;
+   height: 71px;
+   background: #4aaaa5;
+   color: #ffffff;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 30px;
+   border: none;
+   margin: 0;
+   text-align: center;
+   padding-top: 12px;
+   position: fixed;
+   left: 480px;
+   top: 0;
+   z-index: 2;
+}
+/* My Name div */
+.header {
+    background-color: #ffffff;
+    width: 10%;
+}
+/* Nav Bar containing Contact, Portfolio, and About */
+.navbar {
+  overflow: hidden;
+  background-color: #ffffff;
+  position: fixed;
+  padding-top: 20px;
+  padding-right: 470px;
+  top: 0;
+    height: 91px;
+  width: 100%;
+  margin-top: -20px;
+  border-bottom:0.8px solid #cccccc;
+  z-index: 1;
+}
+/* Navbar tabs */
+.navbar a {
+  float: right;
+  display: block;
+  color: #9c9c9c;
+  text-align: center;
+  padding: 18px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* What happens when cursor is over tabs */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+/* About me */
+h2 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 30px;
+    color: #4aaaa5;
+}
+/* Line to space between About me and Content */
+hr {
+    border: 1px solid #cccccc;
+    margin-bottom: 15px;
+}
+/* Overall body containing all content */
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height:1.5em;
+    color: #333;
+    background-color: #4aaaa5;
+    background-image: url('../../assets/images/dust_scratches/dust_scratches.png');
+    margin: auto;
+    padding: 0;
+}
+/* Contains About me and paragraphs */
+.container {
+    margin: 40px;
+}
+/* Content wrapper for styling */
+.wrapper {
+    background-color:#ffffff;
+    border: 0.5px solid #dddddd;
+    max-width: 960px;
+    margin-top: 100px;
+    margin-left: 440px;
+    height: 600px;
+    padding: 50px;
+}
+/* Section containing wrapper */
+section {
+    padding-top: 30px;
+}
+/* Image of Self */
+#selfImage {
+    float: left;
+    margin: 10px;
+}
+/* Body Paragraphs */
+body p {
+    color: #777777;
+    padding: 10px 0px 0px 10px;
+}
+/* Styled footer with copyright */
+footer {
+    width: 100%;
+    color: #cccccc;
+    font-size: 12px;
+    background-color: #666666;
+    text-align: center;
+    border-top: 8px solid #4aaaa5;
+    bottom: 0;
+    position: fixed;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+/* Clearfix */
+.wrapper::after {
+    content: "";
+    clear: both;
+    display: table;
+}

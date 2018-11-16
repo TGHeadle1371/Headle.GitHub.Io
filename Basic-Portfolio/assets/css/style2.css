@@ -1,0 +1,50 @@
+/* Newly styled section */
+.wrapperP {
+background-color: #ffffff;
+    border: 0.5px solid #dddddd;
+    max-width: 960px;
+    margin-top: 75px;
+    margin-left: 440px;
+    height: 750px;
+    padding: 50px;
+
+}
+/* Image Gallery for portfolio projects */
+.gallery {
+	position: relative;
+	float: left;
+	width: 274px;
+	margin: 10px;
+	overflow: auto;
+}
+/* Spaced margin right for every even image */
+.gallery:nth-child(even) {
+	margin-right: 40px;
+}
+/*  Images */
+.gallery img {
+	width: 100%;
+	border: 0 none;
+    opacity: 0.8;
+    height: 180px;
+}
+/* Banner over Images */
+.gallery h3 {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	padding: 18px;
+	margin-bottom: 0;
+	font-weight: 300;
+	line-height: 30px;
+	color: #fff;
+	text-align: center;
+	background: #4aaaa5;
+	border-bottom: 0;
+}
+/* Clearfix, probably not needed because of other CSS files*/
+.gallery::after {
+    content: "";
+    clear: both;
+    display: table;
+}
